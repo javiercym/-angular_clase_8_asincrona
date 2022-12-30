@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AsincronaModule } from './asincrona/asincrona.module';
+import { ValidadEdadDirective } from './validad-edad.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ValidadEdadDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AsincronaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
