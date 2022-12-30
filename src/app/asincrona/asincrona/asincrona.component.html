@@ -13,38 +13,11 @@
         <br>
 
         <div class="boton">
-            <button type="submit" class="btn btn-outline-dark" (click)="guardarDatos()">LOGIN</button>
+            <button type="submit" class="btn btn-outline-dark" (click)="guardarDatos()">Añadir</button>
         </div>
     </form>
 
     <div class="tabla">
-
-        <!-- <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Nombre</th>
-                <th scope="col">Apellidos</th>
-                <th scope="col">Edad</th>
-                <th scope="col">Condicion</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-
-            </tbody>
-        </table> -->
 
         <table class="table table-striped">
             <thead>
@@ -61,7 +34,7 @@
                 <th scope="row">{{ dato.nombre }}</th>
                 <td>{{ dato.apellidos }}</td>
                 <td>{{ dato.edad }}</td>
-                <td>validacion edad</td>
+                <td appValidadEdad [edad]="edad"> </td>
               </tr>
             </tbody>
         </table>

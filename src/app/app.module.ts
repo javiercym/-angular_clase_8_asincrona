@@ -8,8 +8,7 @@ import { ValidadEdadDirective } from './validad-edad.directive';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ValidadEdadDirective
+    AppComponent
   ],
   imports: [
     BrowserModule,
