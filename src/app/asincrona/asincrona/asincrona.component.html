@@ -34,7 +34,7 @@
                 <th scope="row">{{ dato.nombre }}</th>
                 <td>{{ dato.apellidos }}</td>
                 <td>{{ dato.edad }}</td>
-                <td appValidadEdad [edad]="edad"> </td>
+                <td appValidadEdad [edad]="edad" [nombre]="dato.nombre"> </td>
               </tr>
             </tbody>
         </table>
